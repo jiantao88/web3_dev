@@ -11,6 +11,7 @@ contract Storage {
 
     uint256 number;
 
+    mapping (string => uint256) public myFavor;
     /**
      * @dev Store value in variable
      * @param num value to store
