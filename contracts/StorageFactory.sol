@@ -2,7 +2,7 @@
 
 pragma solidity >=0.8.2 <0.9.0;
 
-import "./1_Storage.sol";
+import "./SimpleStorage.sol";
 
 contract StorageFactory {
 

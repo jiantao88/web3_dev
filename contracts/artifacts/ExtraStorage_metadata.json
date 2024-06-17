@@ -94,11 +94,8 @@
 			}
 		],
 		"devdoc": {
-			"custom:dev-run-script": "./scripts/deploy_with_ethers.ts",
-			"details": "Store & retrieve value in a variable",
 			"kind": "dev",
 			"methods": {},
-			"title": "Storage",
 			"version": 1
 		},
 		"userdoc": {
@@ -109,7 +106,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/SimpleStorage.sol": "SimpleStorage"
+			"contracts/ExtraStorage.sol": "ExtraStorage"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -123,6 +120,14 @@
 		"remappings": []
 	},
 	"sources": {
+		"contracts/ExtraStorage.sol": {
+			"keccak256": "0x5e7bffdbf84ec3e113c05ca3585a0978462dc74d93d715293b1c84a32bdc4915",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://7cbf28e192da4f594971cd13bfd31e8bfee9dbaded4025dcff1e68bd8783e877",
+				"dweb:/ipfs/QmdRhhKkkU2tHiyXWBkgtZhLZusQw2NZa4uQnXao1cZFWV"
+			]
+		},
 		"contracts/SimpleStorage.sol": {
 			"keccak256": "0x6d9b6073cb98b39524a6afe1ecd9678cb47c9281bf5bda97472888985e886940",
 			"license": "GPL-3.0",
