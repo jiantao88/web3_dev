@@ -9,22 +9,27 @@ pragma solidity >=0.8.2 <0.9.0;
  */
 contract Storage {
 
-    uint256 number;
+     uint256 favoriteNumber;
 
-    mapping (string => uint256) public myFavor;
-    /**
-     * @dev Store value in variable
-     * @param num value to store
-     */
-    function store(uint256 num) public {
-        number = num;
+    struct People {
+        uint256 favoriteNumber;
+        string name;
+    }
+    // uint256[] public anArray;
+    People[] public people;
+
+    mapping(string => uint256) public nameToFavoriteNumber;
+
+    function store(uint256 _favoriteNumber) public {
+        favoriteNumber = _favoriteNumber;
+    }
+    
+    function retrieve() public view returns (uint256){
+        return favoriteNumber;
     }
 
-    /**
-     * @dev Return value 
-     * @return value of 'number'
-     */
-    function retrieve() public view returns (uint256){
-        return number;
+    function addPerson(string memory _name, uint256 _favoriteNumber) public {
+        people.push(People(_favoriteNumber, _name));
+        nameToFavoriteNumber[_name] = _favoriteNumber;
     }
 }
